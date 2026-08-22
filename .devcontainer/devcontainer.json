@@ -1,0 +1,17 @@
+{
+  "name": "Tkinter & Desktop Lite Setup",
+  "image": "://microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "version": "latest"
+    }
+  },
+  "forwardPorts": [6080, 5901],
+  "portsAttributes": {
+    "6080": {
+      "label": "Browser Desktop UI",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk"
+}
