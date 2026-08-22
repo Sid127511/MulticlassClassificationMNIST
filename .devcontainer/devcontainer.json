@@ -1,6 +1,6 @@
 {
   "name": "Tkinter & Desktop Lite Setup",
-  "image": "://microsoft.com",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "version": "latest"
