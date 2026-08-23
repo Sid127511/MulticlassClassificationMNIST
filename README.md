@@ -1,4 +1,4 @@
-# TkinterCodespaceTemplate
+# Multiclass Classifier
 
 Second activity for LTHS ML Club
 
