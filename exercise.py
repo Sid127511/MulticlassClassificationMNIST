@@ -3,6 +3,7 @@ from random import uniform
 class Classifier:
 
     def __init__(self, classes):
+        self.classes = classes
         self.weights = None
 
     def classify(self, data):
