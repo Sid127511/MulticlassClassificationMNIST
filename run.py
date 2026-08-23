@@ -26,7 +26,7 @@ for y in range(28):
         squares.append(square)
 
 train_set = np.loadtxt('data/mnist_train_800.csv', delimiter=',', skiprows=1)
-classifier = Classifier(10)
+classifier = Classifier(10, 784)
 
 accuracy = classifier.train(train_set, 100)
 
