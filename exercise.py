@@ -2,9 +2,10 @@ from random import uniform
 
 class Classifier:
 
-    def __init__(self, classes):
+    def __init__(self, classes, inputs):
         self.classes = classes
         self.weights = None
+        self.inputs = inputs
 
     def classify(self, data):
         return 0
