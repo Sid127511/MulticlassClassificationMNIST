@@ -28,7 +28,7 @@ for y in range(28):
 train_set = np.loadtxt('data/mnist_train_800.csv', delimiter=',', skiprows=1)
 classifier = Classifier(10, 784)
 
-accuracy = classifier.train(train_set, 100)
+accuracy = classifier.train(train_set, 25)
 
 accuracy_label = tk.Label(root,
                text=f"Train Accuracy: {accuracy}%",
