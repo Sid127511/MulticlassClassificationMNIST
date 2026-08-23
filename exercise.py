@@ -17,7 +17,7 @@ class Classifier:
         for i in range(self.classes):
             sum = 0
             for j in range(self.inputs):
-                sum += data[j] * self.weights[i][j]
+                sum += data[j]/255 * self.weights[i][j]
             if (sum > max):
                 max = sum
                 max_index = i
@@ -44,9 +44,9 @@ class Classifier:
                 else:
                     for i in range(self.inputs):
                         #adjust weights
-                        self.weights[guessed][i] -= train_data[j][i]
+                        self.weights[guessed][i] -= train_data[j][i]/255
                         #if error convert to int with int()
-                        self.weights[int(train_data[j][-1])][i] += train_data[j][i]
+                        self.weights[int(train_data[j][-1])][i] += train_data[j][i]/255
             accuracy = correct_counter/len(train_data)*100
             #print the accuracy
             print(f"Epoch: #{n+1}: {accuracy}")
