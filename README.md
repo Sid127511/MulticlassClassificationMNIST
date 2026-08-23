@@ -4,7 +4,7 @@ Second activity for LTHS ML Club
 
 ### Test Your Code
 
-if its taking forever to train, change second argument line 32 in run.py to something smaller like 25.
+if its taking forever to train, change second argument line 32 in run.py to something smaller (Less epochs generally means less accuracy).
 
 ```bash
 python3 run.py
